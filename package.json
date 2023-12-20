@@ -1,0 +1,25 @@
+{
+  "name": "caiman-vsc",
+  "displayName": "caiman-vsc",
+  "description": "Syntax highlighting for Caiman Assembly",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "caiman",
+      "aliases": ["Caiman", "caiman"],
+      "extensions": [".cair"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "caiman",
+      "scopeName": "source.caiman",
+      "path": "./syntaxes/caiman.tmLanguage.json"
+    }]
+  }
+}
