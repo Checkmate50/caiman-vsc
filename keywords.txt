@@ -1,27 +1,101 @@
-buffer|buffer_space|encoder|event|external|extras|fence|function|impl|native_value|pipeline|ref|schedule|scheduling_join|spatial|timeline|type|value|version|
-buffer_info|cpu|default|encoded|fence_info|function_input|function_output|gpu|halt|have|input|local|met|need|node|none|operation|output|pure|slot_info|
-array|const_ref|const_slice|cpu_buffer_allocator|cpu_buffer_ref|erased_length_array|f32|f64|gpu_buffer_allocator|gpu_buffer_ref|gpu_buffer_slice|i16|i32|i64|i8|mut_ref|mut_slice|struct|tuple|u16|u32|u64|u8|usize|
-alloc-temporary|begin-encoding|borrow-ref|call|constant|debug-hole|default-join|drop|encode-copy|encode-do|encoding-event|extract|fulfill-captures|inline-join|jump|local-copy|local-do-builtin|local-do-external|promise-captures|read-ref|return|schedule-call|schedule-call-yield|schedule-select|select|separated-buffer-space|serialized-join|static-alloc|static-dealloc|static-sub-alloc|submission-event|submit|sync-fence|synchronization-event|write-ref
+buffer
+buffer_space
+encoder
+event
+fence
+ref
+scheduling_join
+type
+native_value
 
-        {
-          "include": "#ffi"
-        },
-        {
-          "include": "#node"
-        },
-        {
-          "include": "#paren-expression"
-        }
+pipeline
+version
 
-    // "type": {
-    //   "match": "buffer_info|cpu|default|encoded|fence_info|function_input|function_output|gpu|halt|have|input|local|met|need|node|none|operation|output|pure|slot_info|",
-    //   "name": "type.keyword"
-    // },
-    // "ffi": {
-    //   "match": "array|const_ref|const_slice|cpu_buffer_allocator|cpu_buffer_ref|erased_length_array|f32|f64|gpu_buffer_allocator|gpu_buffer_ref|gpu_buffer_slice|i16|i32|i64|i8|mut_ref|mut_slice|struct|tuple|u16|u32|u64|u8|usize|",
-    //   "name": "ffi.keyword"
-    // },
-    // "node": {
-    //   "match": "alloc-temporary|begin-encoding|borrow-ref|call|constant|debug-hole|default-join|drop|encode-copy|encode-do|encoding-event|extract|fulfill-captures|inline-join|jump|local-copy|local-do-builtin|local-do-external|promise-captures|read-ref|return|schedule-call|schedule-call-yield|schedule-select|select|separated-buffer-space|serialized-join|static-alloc|static-dealloc|static-sub-alloc|submission-event|submit|sync-fence|synchronization-event|write-ref",
-    //   "name": "node.keyword"
-    // },
+external
+function
+spatial
+timeline
+schedule
+value
+
+impl
+pure
+
+cpu
+default
+encoded
+function_input
+function_output
+gpu
+halt
+have
+input
+local
+met
+need
+node
+none
+operation
+output
+slot_info
+
+array
+const_ref
+const_slice
+cpu_buffer_allocator
+cpu_buffer_ref
+erased_length_array
+f32
+f64
+gpu_buffer_allocator
+gpu_buffer_ref
+gpu_buffer_slice
+i16
+i32
+i64
+i8
+mut_ref
+mut_slice
+struct
+tuple
+u16
+u32
+u64
+u8
+usize
+
+alloc-temporary
+begin-encoding
+borrow-ref
+call
+constant
+debug-hole
+default-join
+drop
+encode-copy
+encode-do
+encoding-event
+extract
+fulfill-captures
+inline-join
+jump
+local-copy
+local-do-builtin
+local-do-external
+promise-captures
+read-ref
+return
+schedule-call
+schedule-call-yield
+schedule-select
+select
+separated-buffer-space
+serialized-join
+static-alloc
+static-dealloc
+static-sub-alloc
+submission-event
+submit
+sync-fence
+synchronization-event
+write-ref

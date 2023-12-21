@@ -3,27 +3,91 @@
 	"name": "Caiman",
 	"patterns": [
 		{
+			"include": "#entities"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#types"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#variables"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.caiman",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.caiman",
-			"begin": "\"",
-			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.caiman",
-					"match": "\\\\."
+					"name": "keyword.control",
+					"match": "\\b(alloc-temporary|begin-encoding|borrow-ref|call|constant|debug-hole|default-join|drop|encode-copy|encode-do|encoding-event|extract|fulfill-captures|inline-join|jump|local-copy|local-do-builtin|local-do-external|promise-captures|read-ref|return|schedule-call|schedule-call-yield|schedule-select|select|separated-buffer-space|serialized-join|static-alloc|static-dealloc|static-sub-alloc|submission-event|submit|sync-fence|synchronization-event|write-ref)\\b"
+				},
+				{
+					"name": "keyword.other",
+					"match": "\\b(pipeline|impl|version|buffer_space|buffer|encoder|event|fence|ref|scheduling_join|type|native_value|function|value|timeline|spatial|schedule|external)"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "support.type.caiman",
+					"match": "\\b(array|const_ref|const_slice|cpu_buffer_allocator|cpu_buffer_ref|erased_length_array|f32|f64|gpu_buffer_allocator|gpu_buffer_ref|gpu_buffer_slice|i16|i32|i64|i8|mut_ref|mut_slice|struct|tuple|u16|u32|u64|u8|usize)\\b"
+				},
+				{
+					"name": "storage.modifier.caiman",
+					"match": "\\b(buffer_info|cpu|dead|default|encoded|fence_info|function_input|function_output|gpu|halt|usable|input|local|saved|need|node|none|operation|output|pure|slot_info)\\b"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-dash",
+					"begin": "//",
+					"end": "\n"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "\\b[0-9]+\\b"
+				},
+				{
+					"name": "string.quoted.double",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.untitled",
+							"match": "\\."
+						}
+					]
+				}
+			]
+			
+		},
+		"variables":  {
+			"patterns": [
+				{
+					"name": "variable.name.caiman",
+					"match": "%[a-zA-Z0-9_]+"
+				},
+				{
+					"name": "variable.other.caiman",
+					"match": "\\$[a-zA-Z0-9_]+"
+				},
+				{
+					"name": "entity.name.function",
+					"match": "@[a-zA-Z0-9_]+"
 				}
 			]
 		}
