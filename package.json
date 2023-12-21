@@ -21,5 +21,6 @@
       "scopeName": "source.caiman",
       "path": "./syntaxes/caiman.tmLanguage.json"
     }]
-  }
+  },
+  "repository": "git@github.com:Checkmate50/caiman-vsc.git"
 }
