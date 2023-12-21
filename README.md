@@ -12,9 +12,9 @@ When installed, you can get pretty colors and commenting out like:
 
 None besides the usual VSC extension requirements
 
-## Known Issues
+## Install from repository
 
-Untested
+Just download the [VSIX](caiman-vsc-0.0.1.vsix) file from this repository and install from VSC with the [Install from VSIX command](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions)
 
 ## Release Notes
 
