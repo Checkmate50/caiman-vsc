@@ -42,7 +42,7 @@
 				},
 				{
 					"name": "storage.modifier.caiman",
-					"match": "\\b(buffer_info|cpu|dead|default|encoded|fence_info|function_input|function_output|gpu|halt|usable|input|local|saved|need|node|none|operation|output|pure|slot_info)\\b"
+					"match": "\\b(buffer_info|cpu|dead|default|encoded|fence_info|function_input|function_output|gpu|halt|usable|local|saved|need|none|operation|phi|pure|slot_info)\\b"
 				}
 			]
 		},
