@@ -16,6 +16,11 @@ None besides the usual VSC extension requirements
 
 Just download the [VSIX](caiman-vsc-0.0.1.vsix) file from this repository and install from VSC with the [Install from VSIX command](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions)
 
+## Commands
+
+Package up with `vsce package`
+Install with `code --install-extension caiman-vsc-0.0.1.vsix`
+
 ## Release Notes
 
 ### 1.0.0

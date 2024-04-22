@@ -30,7 +30,7 @@
 				},
 				{
 					"name": "keyword.other",
-					"match": "\\b(pipeline|impl|version|buffer_space|buffer|encoder|event|fence|ref|scheduling_join|type|native_value|function|value|timeline|spatial|schedule|external)"
+					"match": "\\b(pipeline|impl|version|buffer_space|buffer|encoder|event|fence|ref|scheduling_join|ffi|native_value|function|value|timeline|spatial|schedule|external)"
 				}
 			]
 		},
